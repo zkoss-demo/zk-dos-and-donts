@@ -1,0 +1,5 @@
+<zk>
+	<window apply="local.support.zk_dos_and_donts.part1.CompAndDesktopComposer">
+		<button label="refresh the page" onClick='Executions.sendRedirect(".")'/>
+	</window>
+</zk>

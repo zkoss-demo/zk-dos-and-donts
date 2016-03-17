@@ -1,0 +1,21 @@
+<zk>
+	<zscript>
+		currentWebApp = WebApps.getCurrent();
+		currentSession = Sessions.getCurrent();
+		currentDesktop = Executions.getCurrent().getDesktop();
+	</zscript>
+	<vlayout>
+		<hlayout>
+			<label value="Current App: " />
+			<label value="${currentWebApp}" />
+		</hlayout>
+		<hlayout>
+			<label value="Current Session: " />
+			<label value="${currentSession}" />
+		</hlayout>
+		<hlayout>
+			<label value="Current Desktop: " />
+			<label value="${currentDesktop}" />
+		</hlayout>
+	</vlayout>
+</zk>

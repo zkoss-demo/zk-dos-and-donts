@@ -1,0 +1,26 @@
+<zk>
+	<window
+		viewModel="@id('vm')@init('local.support.zk_dos_and_donts.part1.WiringEfficiencyViewModel')">
+		<vlayout>
+			<label>A ListModel only need to be initialized in most cases. The ListModel is not replaced during normal use, as it is able to update it's content.</label>
+			<button label="Add a bean to the model" onClick="@command('updateValue')" />
+			<hlayout hflex="1">
+				<vlayout hflex="1">
+				<label value="using @init"/>
+				<grid model="@init(vm.myBeanListModel)" />
+				</vlayout>
+				<vlayout hflex="1">
+				<label value="using @bind"/>
+				<grid model="@bind(vm.myBeanListModel)" />
+				</vlayout>
+			</hlayout>
+		</vlayout>
+		<template name="model">
+			<row>
+				<label value="${each.value1}" />
+				<label value="${each.value2}" />
+				<label value="${each.value3}" />
+			</row>
+		</template>
+	</window>
+</zk>

@@ -1,0 +1,17 @@
+<zk>
+	<style>
+		iframe{
+			border:solid 1px #000;
+			width:400px;
+		}
+	</style>
+	<vlayout>
+		<label>A desktop represents a tab in most situations.</label>
+		<label>Using Iframes is equivalent to opening separate browser tabs.</label>
+		<iframe src="iframeContent.zul"/>
+		<iframe id="RfIframe" src="iframeContent.zul"/>
+		<button label="Refresh bottom iframe" onClick="RfIframe.invalidate();"/>
+		<button label="Terminate current session and refresh the page"
+			onClick='Sessions.getCurrent().invalidate();Executions.sendRedirect(".")'/>
+	</vlayout>
+</zk>

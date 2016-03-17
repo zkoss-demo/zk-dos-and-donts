@@ -1,0 +1,25 @@
+<zk>
+	<window
+		apply="local.support.zk_dos_and_donts.part1.CompVsModelComposer">
+		<vlayout>
+			<grid id="myGrid">
+				<template name="model">
+					<row>
+						<label value="${each.value1}" />
+						<label value="${each.value2}" />
+						<label value="${each.value3}" />
+					</row>
+				</template>
+			</grid>
+			<hlayout>
+				<button id="myGridWrongBtn" label="Wrong use" />
+				<button id="myGridGoodBtn" label="Good use" />
+			</hlayout>
+			<listbox id="myListbox" />
+			<hlayout>
+				<button id="myLbWrongBtn" label="Wrong use" />
+				<button id="myLbGoodBtn" label="Good use" />
+			</hlayout>
+		</vlayout>
+	</window>
+</zk>
