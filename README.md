@@ -12,3 +12,14 @@ Examples for ZK do's and don'ts smalltalk
 -1.4 Choosing @init, @load, @save, or @bind
 
 -1.5 Notifying the whole ListModel on change
+
+###Part 2:
+-2.1 Choosing the most appropriate way to add reusable UI fragments to a page
+
+-2.2 Resolving the “Component definition not found: [shadow element]” exception
+
+-2.3 Call notify on non ViewModel Objects
+
+-2.4 Using multiple sizing mechanisms on the same components
+
+-2.5 CRUD operations on ListModels using MVVM
