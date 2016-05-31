@@ -3,8 +3,9 @@
 		currentWebApp = WebApps.getCurrent();
 		currentSession = Sessions.getCurrent();
 		currentDesktop = Executions.getCurrent().getDesktop();
+		currentExecution = Executions.getCurrent();
 	</zscript>
-	<vlayout>
+	<vlayout id="vlayout">
 		<hlayout>
 			<label value="Current App: " />
 			<label value="${currentWebApp}" />
@@ -16,6 +17,14 @@
 		<hlayout>
 			<label value="Current Desktop: " />
 			<label value="${currentDesktop}" />
+		</hlayout>
+		<hlayout>
+			<label value="Current Page " />
+			<label value="${vlayout.getPage()}" />
+		</hlayout>
+		<hlayout>
+			<label value="Current Execution" />
+			<label value="${currentExecution}" />
 		</hlayout>
 	</vlayout>
 </zk>

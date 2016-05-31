@@ -1,0 +1,26 @@
+<zk>
+	<hlayout
+		viewModel="@id('vm')@init('local.support.zk_dos_and_donts.part2.MvvmUpdateOutOfListModelViewModel')">
+		<vlayout hflex="1">
+			<label value="@load(vm.myBean.value1)" />
+			<button label="updating a single value" onClick="@command('handleMyBeanUpdate')" />
+			<label value="@load(vm.myBeanContainer.bean1.value1)"/>
+			<button label="updating a single child bean value" onClick="@command('handleMyBeanContainerUpdate')" />
+		</vlayout>
+		<vlayout hflex="1">
+			<grid model="@load(vm.myBeanList)">
+			<rows>
+				<template name="model">
+					<row>
+						<label value="@load(each.value1)"/>
+						<label value="@load(each.value2)"/>
+						<label value="@load(each.value3)"/>
+					</row>
+				</template>
+			</rows>
+			</grid>
+			<button label="updating a single value" onClick="@command('handleMyBeanListUpdate')" />
+			<button label="updating the whole list" onClick="@command('handleMyBeanListFullUpdate')" />
+		</vlayout>
+	</hlayout>
+</zk>

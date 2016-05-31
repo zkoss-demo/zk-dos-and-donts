@@ -1,0 +1,44 @@
+<zk>
+	<div
+		viewModel="@id('vm')@init('local.support.zk_dos_and_donts.part2.ListModelCrudMvvmViewModel')">
+		<vlayout>
+			<hlayout>
+				<vlayout>
+					<label value="index" />
+					<intbox value="@bind(vm.index)" />
+				</vlayout>
+				<vlayout>
+					<label value="value 1" />
+					<textbox value="@bind(vm.value1)" />
+				</vlayout>
+				<vlayout>
+					<label value="value 2" />
+					<textbox value="@bind(vm.value2)" />
+				</vlayout>
+				<vlayout>
+					<label value="value 3" />
+					<textbox value="@bind(vm.value3)" />
+				</vlayout>
+			</hlayout>
+			<hlayout>
+				<button label="Insert item at index" onClick="@command('cmdInsertItemAt')" />
+				<button label="Insert item before selected" onClick="@command('cmdInsertItemBeforeSelected')" />
+				<button label="Insert item first" onClick="@command('cmdInsertItemFirst')" />
+				<button label="Insert item last" onClick="@command('cmdInsertItemLast')" />
+				<button label="Remove selected item" onClick="@command('cmdRemoveSelectedItem')" />
+				<button label="Remove item at" onClick="@command('cmdRemoveItemAt')" />
+				<button label="Update value 1 on index" onClick="@command('cmdUpdateValue1OnIndex')" />
+				<button label="Update whole bean on index" onClick="@command('cmdUpdateAllValuesOnIndex')" />
+			</hlayout>
+			<listbox model="@init(vm.myListModel)" onSelect="@command('handleSelect')">
+				<template name="model">
+					<listitem>
+						<listcell label="@load(each.value1)" />
+						<listcell label="@load(each.value2)" />
+						<listcell label="@load(each.value3)" />
+					</listitem>
+				</template>
+			</listbox>
+		</vlayout>
+	</div>
+</zk>

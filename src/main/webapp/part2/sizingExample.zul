@@ -1,0 +1,22 @@
+<zk>
+	<div
+		apply="local.support.zk_dos_and_donts.part2.SizingExampleComposer">
+		<hlayout>
+			<vlayout hflex="1">
+				<label
+					value="This grid and its content is sized by hflex." />
+				<listbox id="goodListbox" hflex="1"></listbox>
+			</vlayout>
+			<vlayout hflex="1">
+				<label
+					value="This grid use Hflex for its external width and sizedByContent for its content with" />
+				<label
+					value="Using Vflex, Vflex min and rows at the same time cause the content and the container height to get out of sync" />
+				<button id="toggleVFlexToBadListbox" label="toggle vflex min" />
+				<listbox id="badListbox" hflex="1" rows="10" vflex="false"
+					sizedByContent="true">
+				</listbox>
+			</vlayout>
+		</hlayout>
+	</div>
+</zk>

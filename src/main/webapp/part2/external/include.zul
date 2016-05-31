@@ -1,0 +1,3 @@
+<window title="Hi! I'm an included zul fragment." border="normal" width="200px">
+	<label value="${transferValue}"/>
+</window>

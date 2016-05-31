@@ -1,0 +1,6 @@
+<window title="Hi! I'm an applied template." border="normal" width="200px">
+	<vlayout>
+		<label value="${parentValue}"/>
+		<label value="${passedValue}"/>
+	</vlayout>
+</window>

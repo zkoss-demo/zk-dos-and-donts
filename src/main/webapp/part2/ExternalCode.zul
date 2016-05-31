@@ -1,0 +1,25 @@
+<zk>
+	<hlayout>
+		<div>
+			<vlayout>
+				<label value="iframe"/>
+				<iframe src="./external/iframe.html" height="400px"/>
+			</vlayout>
+		</div>
+		<div>
+			<vlayout>
+				<label value="include" />
+				<include mode="defer"
+					transferValue="Arguments can be passed to the included fragment"
+					src="./external/include.zul"/>
+			</vlayout>
+		</div>
+		<div>
+			<custom-attributes parentValue="Apply doesn't create a separated context. The inserted elements can use parent objects and values directly" />
+			<vlayout>
+				<label value="apply" />
+				<apply passedValue="Arguments can also be passed, and refered to in the applied template." templateURI="./external/apply.zul"/>
+			</vlayout>
+		</div>
+	</hlayout>
+</zk>
