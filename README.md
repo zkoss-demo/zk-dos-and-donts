@@ -16,10 +16,13 @@ Examples for ZK do's and don'ts smalltalk
 ###Part 2:
 -2.1 Choosing the most appropriate way to add reusable UI fragments to a page
 
--2.2 Resolving the ìComponent definition not found: [shadow element]î exception
+-2.2 Resolving the ‚ÄúComponent definition not found: [shadow element]‚Äù exception
 
 -2.3 Call notify on non ViewModel Objects
 
 -2.4 Using multiple sizing mechanisms on the same components
 
 -2.5 CRUD operations on ListModels using MVVM
+
+## License
+* Demo Code - [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
