@@ -1,8 +1,8 @@
 # zk-dos-and-donts
 Examples for ZK do's and don'ts smalltalk
 
-##summary:
-###Part 1:
+## summary:
+### Part 1:
 -1.1 Calling components directly when using a model
 
 -1.2 Understanding ZK scopes
@@ -13,7 +13,7 @@ Examples for ZK do's and don'ts smalltalk
 
 -1.5 Notifying the whole ListModel on change
 
-###Part 2:
+### Part 2:
 -2.1 Choosing the most appropriate way to add reusable UI fragments to a page
 
 -2.2 Resolving the “Component definition not found: [shadow element]” exception
